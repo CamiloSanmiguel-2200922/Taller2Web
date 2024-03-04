@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frases Celebres</title>
+    <style>
+        fieldset{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Frases célebres de usuario</h3>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Datos de Usuario</legend>
+            Usuario <br>
+            <input type="text"name='username'size="20"maxlength="30"required>
+            <br>
+            Frase Principal <br>
+            <textarea name="frase1" id="fp" cols="50" rows="2"required></textarea>
+            <br>
+            Frase Secundaria <br>
+            <textarea name="frase2" id="fs" cols="50" rows="2"required></textarea>
+            <br>
+            
+        </fieldset>
+        <br>
+    <button type="button" onclick="volverMenu()">Enviar</button>
+    <button type="button" onclick="enviarCorreo()">Enviar Correo</button>
+    </form>
+
+    <script>
+        function volverMenu(){
+            window.location.href = "Lista.html";
+        }
+        function enviarCorreo(){
+            alert("Correo electrónico enviado.");
+        }
+    </script>
+</body>
+</html>
